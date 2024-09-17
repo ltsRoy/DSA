@@ -1,0 +1,19 @@
+std::cout << "Hey Soumyajit!" << "\n"; (faster prolly)
+std::cout << "Hey Soumyajit!" << std::endl;
+
+else if saves time.
+indentations dont matter.
+array print invalid index no error just garbage value.
+7.7 in int array trimmed to 7.
+
+referencing invalid string index no error thrown:
+            It does, but only if you tell it to. Accessing an invalid index through [] is undefined behaviour. 
+Which means the behaviour is not defined to give an error message, throw an exception, or crash the program. 
+It could, but it doesn't have to, so implementations don't have to do the additional bounds check -- speeding things up. 
+Accessing through at() is defined to throw an exception if the index is invalid.
+
+s[0] = 'A' works but s[0] = "A" wont. (character not string)
+
+return in c++?
+
+later refer: https://stackoverflow.com/questions/47170740/c-negative-array-index
