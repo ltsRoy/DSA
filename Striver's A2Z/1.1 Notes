@@ -14,6 +14,8 @@ Accessing through at() is defined to throw an exception if the index is invalid.
 
 s[0] = 'A' works but s[0] = "A" wont. (character not string)
 
+array always passed with reference. vectors, map, lists - default passed by value.
+
 return in c++?
 
 later refer: https://stackoverflow.com/questions/47170740/c-negative-array-index
