@@ -1,0 +1,13 @@
+pair lies in utility library.
+
+emplace faster than push.
+
+vector<int> vnew(5,100); // array length 5 with 5 100s.
+vector<int> vnew1(5) // 0 or garbage based on compiler.
+vector<int> vnew2(vnew); // a copy of vnew is made.
+
+
+push back without argument?
+
+
+    
