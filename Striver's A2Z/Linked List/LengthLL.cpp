@@ -15,7 +15,7 @@ class Node{
         data=data1;
         next=nullptr;
     }
-}
+};
 
 int main(){
     vector<int> arr = {1,2,3,4};

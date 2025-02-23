@@ -5,6 +5,7 @@ using namespace std;
 
 class Node {
 public: 
+
     int data;
     Node* next;
 
@@ -17,13 +18,19 @@ public:
         data = data1;
         next = nullptr;
     }
+
+    Node() {
+    }
+
 };
 
 int main() {
     vector<int> arr = {2, 5, 8, 7};
     Node* y = new Node(arr[0]);
+    Node x;
     cout << y << '\n';
     cout << y->data << '\n';
+    cout << x.data << '\n';
 
     delete y; 
     return 0;
