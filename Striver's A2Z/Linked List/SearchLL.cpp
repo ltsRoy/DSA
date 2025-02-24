@@ -4,11 +4,10 @@ using namespace std;
 
 class Node {
 public:
-
     int data;
     Node* next;
 
-    Node(int data1, Node* next1){
+    Node (int data1, Node* next1){
         data=data1;
         next=next1;
     }
@@ -17,26 +16,28 @@ public:
         data=data1;
         next=nullptr;
     }
+
 };
 
-int Length (Node* head){
+int search(Node* head, int ele ){
+
     Node* temp = head;
-    int count=0;
-    while(temp!=NULL){
+    while (temp!=NULL){
+        if (temp->data==ele){
+            return 1;
+        }
         temp=temp->next;
-        count++;
     }
-    return count;
+    return 0;
+
 }
 
 int main(){
-
-    vector <int> arr = {0,1,2,3,4};
+    vector <int> arr = {67,88,9};
+    int ele=9;
     Node* head = new Node(arr[0]);
     head->next = new Node(arr[1]);
     head->next->next = new Node(arr[2]);
-    head->next->next->next = new Node(arr[3]);
-    head->next->next->next->next = new Node(arr[4]);
-    cout << Length(head) << "\n";
-    
+    cout << search(head,ele) << "\n";
+    return 0;
 }
