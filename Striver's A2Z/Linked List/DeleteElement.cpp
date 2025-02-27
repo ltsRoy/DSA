@@ -39,9 +39,9 @@ void printLL (Node* head){
     }
 }
 
-Node* deleteK(Node* head, int k){
+Node* deleteEle(Node* head, int ele){
     if (head == NULL ) return head;
-    if (k==1){
+    if (head->data==ele){
         Node* temp = head;
         head=head->next;
         free(temp);
@@ -52,8 +52,7 @@ Node* deleteK(Node* head, int k){
     int cnt = 0;
     Node* prev = NULL;
     while(temp!=NULL){
-        cnt++;
-        if(cnt==k){
+        if(temp->data==ele){
             prev->next = prev->next->next;
             free(temp);
             break;
@@ -64,14 +63,12 @@ Node* deleteK(Node* head, int k){
         }
     }
     return head;
-
-
-    }
+} 
     
 int main(){
     vector <int> arr = {1,2,3,4};
     Node* head = convertArr2LL(arr);
     printLL(head);  
-    head = deleteK(head,5);
+    head = deleteEle(head,3);
     printLL(head);
 }
