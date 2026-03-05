@@ -1,0 +1,671 @@
+#include <iostream>
+#include <cmath>
+#include<string>
+using namespace std;
+int main()
+{
+    // simple interest
+    //  float p=486,r=10,t=2;
+    //  float k=p+((p*r*t)/100.0);
+    //  cout<<k;
+
+    // compound interest
+    //  int p=100,r=10,t=2;
+    //  float k=p*pow((1+(r/100.0)),t);
+    //  cout<<k;
+
+    // reverse a no
+    //  int n=8756733;
+    //  int s=0;
+    //  while(n!=0){
+    //      int a=n%10;
+    //      n=n/10;
+    //      s+=a;
+    //      s*=10;
+    //  }
+    //  s/=10;
+    //  cout<<s;
+
+    // prime or not
+    //  int n=17;
+    //  bool flag=false;
+    //  for(int i=2;i<=sqrt(n);i++){
+    //      if(n%i==0){
+    //          flag=true;
+    //          break;
+    //      }
+    //  }
+    //  if(flag==true){
+    //      cout<<"not prime";
+    //  }
+    //  else{
+    //      cout<<"prime";
+    //  }
+    //  return 0;
+
+    // even or odd
+    //  int n=121;
+    //  if(n%2==0){
+    //      cout<<"even";
+    //  }
+    //  else{
+    //      cout<<"odd";
+    //  }
+
+    // palindrom or not
+    //  int n=123421;
+    //  int k=n;
+    //  int s=0;
+    //  while(k!=0){
+    //      int a=k%10;
+    //      k/=10;
+    //      s+=a;
+    //      s*=10;
+    //  }
+    //  s/=10;
+    //  if(n==s){
+    //      cout<<"palindrom";
+    //  }
+    //  else{
+    //      cout<<"not";
+    //  }
+
+    // factorial
+    //  int n=6;
+    //  int fact=1;
+    //  while(n!=1){
+    //      fact*=n;
+    //      n--;
+    //  }
+    //  cout<<fact;
+
+    // area of a rectangle using class and object
+    //  class area{
+    //      public:
+    //      int w;
+    //      int h;
+    //      int a;
+    //      void ara(){
+    //          a=w*h;
+    //      }
+    //  };
+    //  area k;
+    //  k.h=5;
+    //  k.w=6;
+    //  k.ara();
+    //  cout<<k.a;
+
+    // factorial using class and object
+    //  class fact{
+    //      public:
+    //      int n;
+    //      int f=1;
+    //      void calc(){
+    //          while(n!=1){
+    //              f*=n;
+    //              n--;
+    //          }
+    //      };
+    //  };
+    //  fact k;
+    //  k.n=5;
+    //  k.calc();
+    //  cout<<k.f;
+
+    // largest among 3 using class and object
+    //  class larg{
+    //      public:
+    //      int a;
+    //      int b;
+    //      int c;
+    //      int bigg(){
+    //          return a>b?(a>c?a:c):(b>c?b:c);
+    //      };
+    //  };
+    //  larg k;
+    //  k.a=6;
+    //  k.b=8;
+    //  k.c=99;
+    //  cout<<k.bigg();
+
+    // palindrom or not using class and object
+    // class pal
+    // {
+    // public:
+    //     int n;
+    //     pal(int a)
+    //     {
+    //         n = a;
+    //     };
+    //     int calc()
+    //     {
+    //         int k = n;
+    //         int s = 0;
+    //         while (k != 0)
+    //         {
+    //             int a = k % 10;
+    //             k /= 10;
+    //             s += a;
+    //             s *= 10;
+    //         }
+    //         s /= 10;
+    //         if (n == s)
+    //         {
+    //             cout << "palindrom";
+    //         }
+    //         else
+    //         {
+    //             cout << "not";
+    //         }
+    //     };
+    // };
+    // pal x(123021);
+    // x.calc();
+
+    //factorial using constructor
+    //  class fact{
+    //      public:
+    //      int n;
+    //      fact(int a){
+    //         n=a;
+    //      }
+    //     int calc(){
+    //         int f=1;
+    //          while(n!=1){
+    //              f*=n;
+    //              n--;
+    //          }
+    //          return f;
+    //      };
+    //  };
+    //  fact k(6);
+    //  cout<<k.calc();
+
+    //cube of a no using constructer
+    // class cube{
+    //     public:
+    //     int n;
+    //     cube(int a){
+    //         n=a;
+    //     }
+    //     void calc(){
+    //         cout<<pow(n,3);
+    //     }
+    // };
+    // cube k(4);
+    // k.calc();
+
+    //calc fibonaki using constructer
+    // class fibo{
+    //     public:
+    //     int n;
+    //     fibo(int a){
+    //         n=a;
+    //     }
+    //     void calc(){
+    //         int a=0;
+    //         int b=1;
+    //         int t=a;
+    //         while(n!=0){
+    //             cout<<t<<"  ";
+    //             a=b;
+    //             b=t;
+    //              t=a+b;
+    //             n--;
+    //         }
+    //     }
+    // };
+    // fibo k(5);
+    // k.calc();
+
+    //pattern 1
+    // int n=3;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n-i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k=1;k<=i;k++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //pattern 2
+    // for(int i=1;i<=n;i++){
+    //     for(int k=1;k<=i;k++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //find min max of an array
+    // int arr[8]={6,6,2,5,3,1,4,7};
+    // int min=arr[0];
+    // int max=arr[0];
+    // for(int i=0;i<8;i++){
+    //     if(arr[i]<min) min=arr[i];
+    //     if(arr[i]>max) max=arr[i];
+    // }
+    // cout<<min<<endl<<max;
+
+    //armstrong or not using class and object
+    // class arms{
+    //     public:
+    //     int n;
+    //     arms(int a){
+    //         n=a;
+    //     }
+    //     void calc(){
+    //         int k=n;
+    //         int digit=0;
+    //         int sum=0;
+    //         while(k!=0){
+    //             digit++;
+    //             k/=10;
+    //         }
+    //         k=n;
+    //         while(k!=0){
+    //             int a=k%10;
+    //             sum+=(int)pow(a,digit);
+    //             k/=10;
+    //         }
+    //         cout<<sum;
+    //     }
+    // };
+    // arms k(153);
+    // k.calc();
+
+    //krishnamurti no
+    // class kris{
+    //     public:
+    //     int n;
+    //     kris(int a){
+    //         n=a;
+    //     }
+    //     int fact(int x){
+    //         int f=1;
+    //         while(x!=0){
+    //             f*=x;
+    //             x--;
+    //         }
+    //         return f;
+    //     }
+    //     void calc(){
+    //         int k=n;
+    //         int digit=0;
+    //         int sum=0;
+    //         while(k!=0){
+    //             digit++;
+    //             k/=10;
+    //         }
+    //         k=n;
+    //         while(k!=0){
+    //             int a=k%10;
+    //             sum+=fact(a);
+    //             k/=10;
+    //         }
+    //         cout<<sum;
+    //     }
+    // };
+    // kris k(40585);
+    // k.calc();
+
+    //default copy constructor
+    // class copycon{
+    //     private:
+    //     int x;
+    //     int y;
+    //     public:
+    //     copycon(int i,int j){
+    //         x=i;
+    //         y=j;
+    //     }
+    //     int getx(){
+    //         return x;
+    //     }
+    //     int gety(){
+    //         return y;
+    //     }
+    // };
+    // copycon a(1,2);
+    // copycon b=a;
+    // cout<<a.getx()<<"  "<<b.getx()<<endl;
+    // cout<<a.gety()<<"  "<<b.gety()<<endl;
+
+    //user define copy constructor
+    // class copycon{
+    //     public:
+    //     int a;
+    //     copycon(int i){
+    //         a=i;
+    //     }
+    //     copycon(copycon &obj){
+    //         a=obj.a;
+    //     }
+    // };
+    // copycon a(4);
+    // copycon b(a);
+    // cout<<a.a<<"  "<<b.a;
+
+    //area of a rectangle using copy cons
+    // class area{
+    //     public:
+    //     int w;
+    //     int h;
+    //     area(int i,int j){
+    //         w=i;
+    //         h=j;
+    //     }
+    //     area(area &obj){
+    //         w=obj.w;
+    //         h=obj.h;
+    //     }
+    //     int getarea(){
+    //         return w*h;
+    //     }
+    // };
+    // area a(4,9);
+    // area b(a);
+    // cout<<b.getarea();
+
+    //calculate gross salary
+    //  class salary{
+    //     public:
+    //     int w;
+    //     salary(int i){
+    //         w=i;
+    //     }
+    //     salary(salary &obj){
+    //         w=obj.w;
+    //     }
+    //     int getsalary(){
+    //         return w-(w*5/100);
+    //     }
+    // };
+    // salary a(100);
+    // salary b(a);
+    // cout<<b.getsalary();
+
+    //feet and inches using const
+    //    class dist{
+    //     public:
+    //     int f;
+    //     int i;
+    //     dist(){
+    //        f=0;
+    //        i=0;
+    //     }
+    //     dist(int a){
+    //        f=a;
+    //        i=0;
+    //     }
+    //     dist(int a,int b){
+    //        f=a;
+    //        i=b;
+    //     }
+    //     int display(){
+    //         cout<<f<<"  "<<i<<endl;
+    //     }
+    // };
+    // dist a;
+    // dist b(10);
+    // dist c(12,23);
+    // a.display();
+    // b.display();
+    // c.display();
+
+    //bankacc using const
+//        class acc{
+//         public:
+//         int accno;
+//         string holdername;
+//         double ball;
+//         acc(){
+//           accno=0;
+//           holdername="";
+//           ball=0.0;
+//         }
+//         acc(int a,string s){
+//           accno=a;
+//           holdername=s;
+//           ball=0.0;
+//         }
+//         acc(int a,string s,double b){
+//           accno=a;
+//           holdername=s;
+//           ball=b;
+//         }
+//         int display(){
+//             cout<<accno<<"  "<<holdername<<"  "<<ball<<endl;
+//         }
+//     };
+// int main(){
+//     int p;
+//     double b;
+//     string c;
+//     getline(cin,c);
+//     cout<<c;
+//     cin>>p;
+//     cout<<p;
+//     cin>>b;
+//     cout<<b;
+    
+//     acc x;
+//     acc y(p,c);
+//     acc z(p,c,b);
+//     x.display();
+//     y.display();
+//     z.display();
+
+       //overloaded function
+
+    //    class integer{
+    //     public:
+    //     int sum(int a,int b){
+    //         return a+b;
+    //     }
+    //     int sum(int a,int b,int c){
+    //         return a+b+c;
+    //     }
+    //     double sum(double a,double b){
+    //         return a+b;
+    //     }
+    //    };
+    //    integer x;
+    //    cout<<x.sum(1,2);
+    //    cout<<x.sum(1,2,3);
+    //    cout<<x.sum(1.4,4.2);
+
+          //area usin overloading
+//                  class integer{
+//         public:
+//         double sum(int r){
+//             return (22.0/7.0)*r*r;
+//         }
+//         float sum(float a,float b){
+//             return a*b;
+//         }
+//         double sum(double a,double b){
+//             return (a+b)/2;
+//         }
+//        };
+//        integer x;
+//        cout<<x.sum(2);
+//        cout<<x.sum(2.5,3.5);
+//        cout<<x.sum(4.5,4);
+
+          //operation overloading
+    //     class integer{
+    //     public:
+    //     int n;
+    //     integer(int a){
+    //         n=a;
+    //     }
+    //     integer operator + (integer &obj){
+    //         integer temp(0);
+    //         temp.n=n+obj.n;
+    //         return temp;
+    //     }
+    //    };
+    //    integer x(3);
+    //    integer y(5);
+    //    integer z=x+y;
+    //    cout<<z.n;
+
+    //single inheritance
+    // class vehicle{
+    //     public:
+    //     vehicle(){
+    //         cout<<"vehicle  ";
+    //     }
+    // };
+    // class car:public vehicle{
+    //     public:
+    //     car(){
+    //         cout<<"car   ";
+    //     }
+    // };
+    // vehicle a;
+    // cout<<endl;
+    // car b;
+
+    //multiple inhertitence
+    // class vehicle{
+    //     public:
+    //     vehicle(){
+    //         cout<<"vehicle  ";
+    //     }
+    // };
+    // class car:public vehicle{
+    //     public:
+    //     car(){
+    //         cout<<"car   ";
+    //     }
+    // };
+    // class nano:public car{
+    //     public:
+    //     nano(){
+    //         cout<<"nano   ";
+    //     }
+    // };
+    // vehicle a;
+    // cout<<endl;
+    // car b;
+    // cout<<endl;
+    // nano c;
+
+    //hieratical inharitance
+    //  class vehicle{
+    //     public:
+    //     vehicle(){
+    //         cout<<"vehicle  ";
+    //     }
+    // };
+    // class car:public vehicle{
+    //     public:
+    //     car(){
+    //         cout<<"car   ";
+    //     }
+    // };
+    // class nano:public vehicle{
+    //     public:
+    //     nano(){
+    //         cout<<"nano   ";
+    //     }
+    // };
+    // vehicle a;
+    // cout<<endl;
+    // car b;
+    // cout<<endl;
+    // nano c;
+
+    //hybrid inheritance
+    //   class vehicle{
+    //     public:
+    //     vehicle(){
+    //         cout<<"vehicle  ";
+    //     }
+    // };
+    // class car:public vehicle{
+    //     public:
+    //     car(){
+    //         cout<<"car   ";
+    //     }
+    // };
+    // class bike:public vehicle{
+    //     public:
+    //     bike(){
+    //         cout<<"bike   ";
+    //     }
+    // };
+    // class autoo:public car,bike{
+    //     public:
+    //     autoo(){
+    //         cout<<"autoo   ";
+    //     }
+    // };
+    // autoo a;
+
+    //virtual function
+    // class base{
+    //     public:
+    //     virtual void show(){
+    //         cout<<" virtual";
+    //     }
+    // };
+    // class derive:public base{
+    //     public:
+    //     void show(){
+    //         cout<<"derive ";
+    //     }
+    // };
+    // base *a;
+    // derive b;
+    // a=&b;
+    // a->show();
+    // return 0;
+
+       // pure virtual function
+    // class base{
+    //     public:
+    //     virtual void show()=0;
+    // };
+    // class derive:public base{
+    //     public:
+    //     void show(){
+    //         cout<<"derive ";
+    //     }
+    // };
+    // base *a;
+    // derive b;
+    // a=&b;
+    // a->show();
+    // return 0;
+
+    //throw and catch
+    // int a=10;
+    // int b=100;
+    // try{
+    //     if(b==0){
+    //         runtime_error("division by 0");
+    //     }
+    //     cout<<a/b;
+    // }
+    // catch(const runtime_error &e){
+    //     cout<<"error"<<e.what();
+    // }
+
+    //through
+    // int k=10;
+    // try{
+    //     if(k<100){
+    //         throw out_of_range("invalid");
+    //     }
+    //     cout<<"ok";
+    // }
+    // catch(const out_of_range &e){
+    //     cout<<e.what();
+    // }
+
+    
+ }
